@@ -128,18 +128,11 @@ for (i in 1:n.samples) {
 }
 values <- cbind(x=x.star,as.data.frame(values))
 values <- values %>% 
-  gather(key="Sampled Functions",value=y, V1:V50)
 
-# Plot the result, including error bars on the observed points
-ggplot(values, aes(x=x,y=y)) + 
-  geom_line(aes(group=`Sampled Functions`), colour="grey80") +
-  geom_line(data=data.frame(x.star=x.star,f.star.bar=f.star.bar),
-            aes(x=x.star,y=f.bar.star),colour="red", size=1) + 
-  geom_errorbar(data=f %>% 
-                  mutate(ymin=y-2*sigma.n,
-                         ymax=y+2*sigma.n),
-                aes(x=x,ymin=ymin, ymax=ymax), width=0.2) +
-  geom_point(data=f,aes(x=x,y=y)) +
-  theme_bw() +
-  scale_y_continuous(lim=c(-3,3), name="Output, f(x)") +
-  xlab("Input, x")
+  
+  asdflajsdlfjksd
+
+a
+sdfasdf
+asd
+fadf
